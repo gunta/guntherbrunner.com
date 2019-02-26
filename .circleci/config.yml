@@ -9,18 +9,17 @@ jobs:
         - master
     docker:
       - image: cibuilds/hugo:latest
-
     working_directory: ~/project
     steps:
       - run:
           name: Update enviroment
           command: apk update && apk add git
       - run:
-        name: Hugo version
-        command: echo "$(hugo version)"
+          name: Hugo version
+          command: echo "$(hugo version)"
       - checkout
       - run:
-        name: Building blog pages
-        command: |
-          HUGO_ENV=production hugo -v -s ~/project/
-          cp public/index.xml public/feed.xml
+          name: Building blog pages
+          command: |
+            HUGO_ENV=production hugo -v -s ~/project/
+            cp public/index.xml public/feed.xml
