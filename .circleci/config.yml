@@ -22,4 +22,4 @@ jobs:
           name: Building blog pages
           command: |
             HUGO_ENV=production hugo -v
-            cp public/index.xml public/feed.xml
+#cp public/index.xml public/feed.xml
