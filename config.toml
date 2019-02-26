@@ -1,0 +1,40 @@
+baseURL = "http://guntherbrunner.com/"
+# include content marked as draft
+buildDrafts = false
+# include content with publishdate in the future
+buildFuture = false
+# include content already expired
+buildExpired = false
+# enable this to make all relative URLs relative to content root. Note that this does not affect absolute URLs.
+relativeURLs = true
+disableRSS = true
+enableRobotsTXT = true
+editor = "nano"
+languageCode = "en"
+language = "en"
+theme = "vncnt-hugo"
+title = "Günther Brunner"
+
+[blackfriday]
+  extensions = ["hardLineBreak"]
+
+[permalinks]
+  fixed = ":title/"
+  posts = "posts/:slug/"
+
+[params]
+  author = "Günther Brunner"
+  description = "Personal Site"
+  bio = "Product Manager\nSoftware Engineer\nDesigner"
+  avatar = "https://avatars3.githubusercontent.com/u/657059?s=460&v=4"
+  favicon = "img/favicon_io/favicon.ico"
+  gtag = "UA-135215362-1"
+
+  [params.contact]
+    #email = "contact@guntherbrunner.com"
+    github = "gunta"
+    instagram = "gunta85"
+    twitter = "gunta85"
+    speakerdeck = "gunta"
+    medium = "gunta85"
+    linkedin = "gunta"

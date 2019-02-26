@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# Personal site for Gunther Brunner
 
-You can use the [editor on GitHub](https://github.com/gunta/guntherbrunner.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is a simple theme for [**hugo**](https://gohugo.io/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Installation
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Clone this repo into your `themes` directory of your **hugo** website:
+```bash
+git clone https://github.com/gunta/guntherbrunner.com
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Configuration
 
-### Jekyll Themes
+Copy the `config.toml` file of the theme into the main directory of your **hugo** website.
+You may want to adjust the value of `baseURL` as well as the parameters in the `[params]` section.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gunta/guntherbrunner.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Third-party Components
 
-### Support or Contact
+This theme relies on fontawesome. The included files in `static/webfonts` are used under the SIL Open Font License 1.1 as described in `static/css/all.min.css`. The latter file is licensed under the MIT License.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+The Raleway font files in `static/fonts` are licensed under the SIL Open Font License 1.1 (see `static/fonts/OFL.txt`)
+
+Both `normalize.css` and `skeleton.css` are licensed unter the MIT License.
+
